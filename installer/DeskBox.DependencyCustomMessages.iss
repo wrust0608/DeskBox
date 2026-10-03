@@ -97,3 +97,11 @@ chinesetraditional.DependencyDownloadFailed=%1 下載失敗。%n主要 URL：%2%
 chinesetraditional.DependencyInstallStartFailed=%1 安裝程式無法以系統管理員權限啟動。請允許 Windows 提示，然後再試一次。
 chinesetraditional.DependencyInstallFailed=%1 安裝失敗。結束代碼：%2。%n請確認此 Windows 版本受支援，或手動安裝相依元件後重新執行 DeskBox 安裝程式。
 chinesetraditional.RuntimeDependencyComment=此安裝程式會視需要偵測並下載 .NET 10 Runtime 和 Windows App Runtime 2.4。
+
+vietnamese.DependencyDownloadCancelled=Đã hủy tải xuống.
+vietnamese.DependencyDownloadFailedSummary=Không thể tải xuống các thành phần phụ thuộc của DeskBox.
+vietnamese.DependencyInstallFailedSummary=Không thể cài đặt các thành phần phụ thuộc của DeskBox.
+vietnamese.DependencyDownloadFailed=%1 tải xuống thất bại.%nURL chính: %2%nURL dự phòng: %3%nLỗi: %4
+vietnamese.DependencyInstallStartFailed=Không thể khởi chạy trình cài đặt %1 với quyền quản trị viên. Vui lòng chấp nhận lời nhắc của Windows rồi thử lại.
+vietnamese.DependencyInstallFailed=Cài đặt %1 thất bại. Mã thoát: %2.%nVui lòng xác nhận phiên bản Windows này được hỗ trợ hoặc cài đặt thủ công thành phần phụ thuộc rồi chạy lại trình cài đặt DeskBox.
+vietnamese.RuntimeDependencyComment=Trình cài đặt này sẽ phát hiện và tải xuống .NET 10 Runtime cùng Windows App Runtime 2.4 khi cần.

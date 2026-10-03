@@ -25,3 +25,5 @@ bengali.ManagedStorageShortcutPrompt=আনইনস্টল করার প�
 bengali.ManagedStorageShortcutCreateFailed=ডেস্কটপ শর্টকাট তৈরি করা যায়নি। আপনার ফাইলগুলো এখনও এখানে নিরাপদ আছে:%n%1
 russian.ManagedStorageShortcutPrompt=Чтобы эти файлы было легко найти после удаления программы, создать на рабочем столе ярлык «DeskBox Files»?%n%nЯрлык будет открывать:%n%1
 russian.ManagedStorageShortcutCreateFailed=Не удалось создать ярлык на рабочем столе. Ваши файлы по-прежнему находятся в безопасности здесь:%n%1
+vietnamese.ManagedStorageShortcutPrompt=Để dễ tìm lại các tệp này sau khi gỡ cài đặt, bạn có muốn tạo lối tắt "DeskBox Files" trên màn hình nền?%n%nLối tắt sẽ mở:%n%1
+vietnamese.ManagedStorageShortcutCreateFailed=Không thể tạo lối tắt trên màn hình nền. Tệp của bạn vẫn an toàn tại:%n%1

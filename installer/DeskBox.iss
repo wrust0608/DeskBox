@@ -1,4 +1,4 @@
-﻿; DeskBox 安装脚本
+; DeskBox 安装脚本
 ; 零售安装包由 scripts\build-stage-7c1-distribution.ps1 产出（Full Native AOT 载荷）。
 ; 载荷必须由 ..\scripts\publish-aot-retail.ps1 -Platform x64 生成，
 ; 以便同时生成 DeskBox.InstallManifest.txt。
@@ -98,6 +98,7 @@ Name: "french"; MessagesFile: "Languages\French.isl"
 Name: "arabic"; MessagesFile: "Languages\Arabic.isl"
 Name: "bengali"; MessagesFile: "Languages\Bengali.islu"
 Name: "russian"; MessagesFile: "Languages\Russian.isl"
+Name: "vietnamese"; MessagesFile: "Languages\Vietnamese.isl"
 
 [Messages]
 #include "DeskBox.HindiBengaliMessages.iss"
@@ -287,6 +288,7 @@ begin
   else if ActiveLanguage = 'russian' then Result := 'ru-RU'
   else if ActiveLanguage = 'chinesesimplified' then Result := 'zh-CN'
   else if ActiveLanguage = 'chinesetraditional' then Result := 'zh-TW'
+  else if ActiveLanguage = 'vietnamese' then Result := 'vi-VN'
   else Result := 'en-US';
 end;
 
