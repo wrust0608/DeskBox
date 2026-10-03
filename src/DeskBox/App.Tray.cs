@@ -166,15 +166,7 @@ public partial class App
             })
         };
         _trayIcon.SecondWindowContextMenuOpened += OnSecondWindowTrayContextMenuOpened;
-        try
-        {
-            _trayIcon.ContextFlyout = contextMenu;
-        }
-        catch (Exception ex)
-        {
-            Log($"[Tray] ContextFlyout initialization failed: {ex.Message}");
-            _trayIcon.ContextMenuMode = ContextMenuMode.PopupMenu;
-        }
+        _trayIcon.ContextFlyout = contextMenu;
 
         if (_trayWindow.Content is null)
         {

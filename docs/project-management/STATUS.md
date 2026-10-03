@@ -1,11 +1,11 @@
 # Project Status
 
 **Project:** DeskBox Vietnamese
-**Current state:** `VI_TRANSLATION_COMPLETE_AWAITING_FINAL_PM_REVIEW`
+**Current state:** `VI_TRANSLATION_FINAL_READY_FOR_INSTALLER`
 **Execution model:** FAST TRACK (Approved per D-008)
-**Code modification authorized:** YES (vi-VN infrastructure & full translation)
-**Translation authorized:** FULL TRANSLATION (2,677 keys translated and reviewed)
-**Installer build authorized:** NO (Deferred)
+**Code modification authorized:** YES (vi-VN infrastructure & targeted copy polish)
+**Translation authorized:** FULL TRANSLATION (2,677 keys translated, audited, and polished)
+**Installer build authorized:** NO (Awaiting PM Authorization)
 **Local installation authorized:** NO
 
 ## Fast Track Milestones
@@ -18,15 +18,16 @@
 - [x] **Localization Tests:** COMPLETE (81 / 81 PASS)
 - [x] **Full Regression Suite:** COMPLETE (4,630 / 4,633 PASS; exactly 0 new regressions matching baseline)
 - [x] **Debug Runtime Verification:** COMPLETE (Canonical Debug exe verified on Windows 11 x64, vi-VN loaded)
-- [ ] **Final PM Review:** AWAITING FINAL REVIEW
+- [x] **Targeted Language Polish:** COMPLETE (Snapshot terminology, feature widgets, media, clipboard, verify, mapping, cleartext warnings polished)
+- [x] **Scope Isolation:** COMPLETE (`App.Tray.cs` reverted to original upstream behavior)
+- [ ] **Installer Generation:** Awaiting PM Authorization
 
 ## Active Deliverables
-- `docs/vi-VN/TRANSLATION_CALIBRATION.md`
 - `src/DeskBox/Strings/vi-VN.json`
 - `src/DeskBox/Resources/vi-VN/Resources.resw`
 - `src/DeskBox/Helpers/WeatherCodeMapper.cs`
-- `src/DeskBox/App.Tray.cs`
+- `docs/vi-VN/TRANSLATION_CALIBRATION.md`
 - `docs/project-management/STATUS.md`
 
 ## Next Action Required
-Project Manager conducts final review of the full Vietnamese translation and runtime verification before merge.
+Awaiting Project Manager review and authorization to proceed to installer generation.
