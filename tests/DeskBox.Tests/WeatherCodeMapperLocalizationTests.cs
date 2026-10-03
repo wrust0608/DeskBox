@@ -17,4 +17,17 @@ public sealed class WeatherCodeMapperLocalizationTests
     {
         Assert.Equal(expected, WeatherCodeMapper.GetDescription(0, locale));
     }
+
+    [Theory]
+    [InlineData(0, "Trời quang")]
+    [InlineData(48, "Sương mù đóng băng")]
+    [InlineData(66, "Mưa đóng băng")]
+    [InlineData(77, "Hạt tuyết")]
+    [InlineData(85, "Tuyết rơi từng đợt")]
+    [InlineData(86, "Tuyết rơi dày từng đợt")]
+    [InlineData(95, "Dông")]
+    public void Vietnamese_WeatherCodes_MapCorrectly(int code, string expected)
+    {
+        Assert.Equal(expected, WeatherCodeMapper.GetDescription(code, "vi-VN"));
+    }
 }
