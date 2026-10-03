@@ -1,0 +1,121 @@
+[
+  {
+    "File": "src\\DeskBox\\Views\\ContentWidgetWindow.xaml",
+    "Line": 11,
+    "Type": "XAML:Title",
+    "String": "DeskBox Content Widget",
+    "Classification": "PROPER_NOUN"
+  },
+  {
+    "File": "src\\DeskBox\\Views\\OnboardingWindow.xaml",
+    "Line": 11,
+    "Type": "XAML:Title",
+    "String": "DeskBox Onboarding",
+    "Classification": "PROPER_NOUN"
+  },
+  {
+    "File": "src\\DeskBox\\Views\\OnboardingWindow.xaml",
+    "Line": 171,
+    "Type": "XAML:Text",
+    "String": "📁",
+    "Classification": "LOC_REQUIRED"
+  },
+  {
+    "File": "src\\DeskBox\\Views\\OnboardingWindow.xaml",
+    "Line": 186,
+    "Type": "XAML:Text",
+    "String": "📄",
+    "Classification": "LOC_REQUIRED"
+  },
+  {
+    "File": "src\\DeskBox\\Views\\OnboardingWindow.xaml",
+    "Line": 272,
+    "Type": "XAML:Text",
+    "String": "🗂️",
+    "Classification": "LOC_REQUIRED"
+  },
+  {
+    "File": "src\\DeskBox\\Views\\OnboardingWindow.xaml",
+    "Line": 276,
+    "Type": "XAML:Text",
+    "String": "🗃️",
+    "Classification": "LOC_REQUIRED"
+  },
+  {
+    "File": "src\\DeskBox\\Views\\OnboardingWindow.xaml",
+    "Line": 280,
+    "Type": "XAML:Text",
+    "String": "📂",
+    "Classification": "LOC_REQUIRED"
+  },
+  {
+    "File": "src\\DeskBox\\Views\\OnboardingWindow.xaml",
+    "Line": 285,
+    "Type": "XAML:Text",
+    "String": "⚙️",
+    "Classification": "LOC_REQUIRED"
+  },
+  {
+    "File": "src\\DeskBox\\Views\\QuickCaptureWidgetWindow.xaml",
+    "Line": 13,
+    "Type": "XAML:Title",
+    "String": "DeskBox Quick Capture",
+    "Classification": "PROPER_NOUN"
+  },
+  {
+    "File": "src\\DeskBox\\Views\\SettingsWindow.xaml",
+    "Line": 17,
+    "Type": "XAML:Title",
+    "String": "DeskBox Settings",
+    "Classification": "PROPER_NOUN"
+  },
+  {
+    "File": "src\\DeskBox\\Views\\SettingsWindow.xaml",
+    "Line": 1460,
+    "Type": "XAML:PlaceholderText",
+    "String": ".psd .ai .fig",
+    "Classification": "LOC_REQUIRED"
+  },
+  {
+    "File": "src\\DeskBox\\App.AotTodoNotificationLifecycleSmoke.cs",
+    "Line": 221,
+    "Type": "C#:DialogTitle",
+    "String": "DeskBox Todo AOT 验证（单项）",
+    "Classification": "REVIEW_REQUIRED"
+  },
+  {
+    "File": "src\\DeskBox\\App.AotTodoNotificationLifecycleSmoke.cs",
+    "Line": 223,
+    "Type": "C#:DialogTitle",
+    "String": "DeskBox Todo AOT 验证（聚合）",
+    "Classification": "REVIEW_REQUIRED"
+  },
+  {
+    "File": "src\\DeskBox\\App.AotTodoStepsPersistenceSmoke.cs",
+    "Line": 10,
+    "Type": "C#:DialogTitle",
+    "String": "AOT Todo steps task",
+    "Classification": "REVIEW_REQUIRED"
+  },
+  {
+    "File": "src\\DeskBox\\Controls\\WidgetContents\\TodoWidgetContent.AotPersistenceSmoke.cs",
+    "Line": 9,
+    "Type": "C#:DialogTitle",
+    "String": "AOT Todo initial task",
+    "Classification": "REVIEW_REQUIRED"
+  },
+  {
+    "File": "src\\DeskBox\\Controls\\WidgetContents\\TodoWidgetContent.AotPersistenceSmoke.cs",
+    "Line": 10,
+    "Type": "C#:DialogTitle",
+    "String": "AOT Todo persisted edited title",
+    "Classification": "REVIEW_REQUIRED"
+  },
+  {
+    "File": "src\\DeskBox\\Controls\\WidgetContents\\TodoWidgetContent.AotStepsPersistenceSmoke.cs",
+    "Line": 11,
+    "Type": "C#:DialogTitle",
+    "String": "AOT Todo steps task",
+    "Classification": "REVIEW_REQUIRED"
+  }
+]
