@@ -355,6 +355,7 @@ public static class WeatherCodeMapper
             "ar-SA" => GetDescriptionAr(code),
             "bn-BD" => GetDescriptionBn(code),
             "ru-RU" => GetDescriptionRu(code),
+            "vi-VN" => GetDescriptionVi(code),
             _ => GetDescriptionEn(code)
         };
     }
@@ -548,6 +549,20 @@ public static class WeatherCodeMapper
             80 or 81 => "Ливневый дождь", 82 => "Сильный ливень", 85 => "Снегопад",
             86 => "Сильный снегопад", 95 => "Гроза", 96 => "Гроза с градом",
             99 => "Гроза с сильным градом", _ => "Неизвестно"
+        };
+    }
+
+    private static string GetDescriptionVi(int code)
+    {
+        return code switch
+        {
+            0 => "Trời quang", 1 => "Chủ yếu trời quang", 2 => "Có mây rải rác", 3 => "U ám",
+            45 => "Sương mù", 48 => "Sương mù đọng băng", 51 or 53 or 61 => "Mưa nhỏ",
+            55 or 63 => "Mưa vừa", 65 => "Mưa to", 56 or 57 or 66 or 67 => "Mưa kèm băng giá",
+            71 => "Tuyết nhẹ", 73 => "Tuyết vừa", 75 => "Tuyết dày", 77 => "Tuyết hạt",
+            80 or 81 => "Mưa rào", 82 => "Mưa rào lớn", 85 => "Mưa rào tuyết",
+            86 => "Mưa rào tuyết dày", 95 => "Dông bão", 96 => "Dông kèm mưa đá",
+            99 => "Dông kèm mưa đá lớn", _ => "Không xác định"
         };
     }
 }

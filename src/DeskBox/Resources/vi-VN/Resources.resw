@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <data name="AppDisplayName" xml:space="preserve">
+    <value>DeskBox Widgets</value>
+  </data>
+  <data name="AppDescription" xml:space="preserve">
+    <value>Bộ tiện ích quản lý và sắp xếp màn hình nền cho Windows 10/11</value>
+  </data>
+</root>

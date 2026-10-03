@@ -12,6 +12,7 @@ public sealed class WeatherCodeMapperLocalizationTests
     [InlineData("ar-SA", "سماء صافية")]
     [InlineData("bn-BD", "পরিষ্কার আকাশ")]
     [InlineData("ru-RU", "Ясное небо")]
+    [InlineData("vi-VN", "Trời quang")]
     public void NewLocales_LocalizeWeatherDescription(string locale, string expected)
     {
         Assert.Equal(expected, WeatherCodeMapper.GetDescription(0, locale));

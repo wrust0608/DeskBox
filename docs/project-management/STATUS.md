@@ -1,33 +1,28 @@
 # Project Status
 
 **Project:** DeskBox Vietnamese
-**Current state:** `P0_COMPLETE_AWAITING_EXTERNAL_REVIEW`
-**Authorized execution phase:** P0 ONLY (P1 through P8 LOCKED)
-**Code modification authorized:** NO
-**Translation authorized:** NO
-**Installer build authorized:** NO
+**Current state:** `VI_TRANSLATION_CALIBRATION_AWAITING_REVIEW`
+**Execution model:** FAST TRACK (Approved per D-008)
+**Code modification authorized:** YES (vi-VN infrastructure & calibration)
+**Translation authorized:** CALIBRATION ONLY (146 strings calibrated, 2,677 total keys in place)
+**Installer build authorized:** NO (Deferred)
 **Local installation authorized:** NO
 
-## Phase Gate Status
-- [x] **P0 — Discovery & Baseline Audit:** COMPLETE
-- [ ] **GATE-0:** AWAITING EXTERNAL REVIEW & APPROVAL
-- [ ] **P1 — Localization Architecture & Design:** LOCKED
-- [ ] **P2 — vi-VN Implementation:** LOCKED
-- [ ] **P3 — Automated Validation:** LOCKED
-- [ ] **P4 — Debug Runtime QA:** LOCKED
-- [ ] **P5 — Functional Sandbox QA:** LOCKED
-- [ ] **P6 — Release / Installer:** LOCKED
-- [ ] **P7 — Local Installation Trial:** LOCKED
-- [ ] **P8 — Rollback Verification & Final Handoff:** LOCKED
+## Fast Track Milestones
+- [x] **SDK Unblock:** COMPLETE (.NET SDK 10.0.303 side-by-side)
+- [x] **Baseline Verification:** COMPLETE (4,618 / 4,621 PASS; 3 Known Exceptions accepted per D-008)
+- [x] **vi-VN Infrastructure:** COMPLETE (Settings, LocalizationService, ViewModel, WeatherCodeMapper, csproj, appxmanifest, resw)
+- [x] **Resource Parity:** COMPLETE (2,677 keys, 0 missing, 0 extra, 0 placeholder mismatches)
+- [x] **Translation Calibration:** COMPLETE (146 representative strings in `docs/vi-VN/TRANSLATION_CALIBRATION.md`)
+- [x] **Localization Tests:** COMPLETE (82 / 82 PASS)
+- [x] **Full Regression Suite:** COMPLETE (4,623 / 4,626 PASS; exactly 0 new regressions)
+- [ ] **PM Language Review:** AWAITING REVIEW
 
-## Review Deliverables Ready on GitHub
-- `docs/vi-VN/EXTERNAL_REVIEW_PACKET.md`
-- `docs/vi-VN/P0_BASELINE_REPORT.md`
-- `docs/vi-VN/P0_LOCALIZATION_ARCHITECTURE.md`
-- `docs/vi-VN/P0_STRING_INVENTORY.md`
-- `docs/vi-VN/P0_ENVIRONMENT.md`
-- `docs/vi-VN/P0_RISK_REGISTER.md`
-- `docs/vi-VN/P0_NEXT_PHASE_PROPOSAL.md`
+## Active Deliverables
+- `docs/vi-VN/TRANSLATION_CALIBRATION.md`
+- `src/DeskBox/Strings/vi-VN.json`
+- `src/DeskBox/Resources/vi-VN/Resources.resw`
+- `docs/project-management/08_DECISION_LOG.md`
 
 ## Next Action Required
-External Reviewer / Project Manager evaluates `docs/vi-VN/EXTERNAL_REVIEW_PACKET.md`, resolves decisions regarding .NET SDK resolution and terminology, and issues formal approval to unlock Phase P1.
+Project Manager conducts language review on calibration set in `docs/vi-VN/TRANSLATION_CALIBRATION.md`. Upon approval of tone and terminology, full translation of all 2,677 keys will proceed.

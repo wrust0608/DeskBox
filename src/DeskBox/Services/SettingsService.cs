@@ -1,4 +1,4 @@
-﻿using System.Collections.Concurrent;
+using System.Collections.Concurrent;
 using System.Text.Json;
 using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
@@ -280,6 +280,7 @@ public sealed class SettingsService
     public const string LanguageArabic = "ar-SA";
     public const string LanguageBengali = "bn-BD";
     public const string LanguageRussian = "ru-RU";
+    public const string LanguageVietnamese = "vi-VN";
     public const double DefaultWidgetWidth = 280;
     public const double DefaultWidgetHeight = 400;
     public const bool DefaultGlobalHotkeyEnabled = true;
@@ -2320,7 +2321,7 @@ settings.FocusClickedWidgetOnRaise = false;
         }
 
         if (settings.Language is not (LanguageSystem or LanguageChinese or LanguageChineseTraditional or LanguageEnglish or LanguageJapanese or LanguageGerman or LanguagePortuguese
-            or LanguageHindi or LanguageSpanish or LanguageFrench or LanguageArabic or LanguageBengali or LanguageRussian))
+            or LanguageHindi or LanguageSpanish or LanguageFrench or LanguageArabic or LanguageBengali or LanguageRussian or LanguageVietnamese))
         {
             settings.Language = LanguageSystem;
             changed = true;

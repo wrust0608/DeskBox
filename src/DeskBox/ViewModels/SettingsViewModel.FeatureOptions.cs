@@ -1,4 +1,4 @@
-﻿using System.Globalization;
+using System.Globalization;
 using System.Collections.ObjectModel;
 using System.Threading;
 using CommunityToolkit.Mvvm.ComponentModel;
@@ -29,7 +29,8 @@ public partial class SettingsViewModel
         LocalizationService.LanguageFrench,
         LocalizationService.LanguageArabic,
         LocalizationService.LanguageBengali,
-        LocalizationService.LanguageRussian
+        LocalizationService.LanguageRussian,
+        LocalizationService.LanguageVietnamese
     ];
     public string[] AvailableLanguageDisplayNames => _cachedLanguageDisplayNames ??= AvailableLanguages.Select(_localizationService.GetLanguageDisplayName).ToArray();
 

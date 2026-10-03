@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
@@ -272,6 +272,7 @@
     <EmbeddedResource Include="Strings\ar-SA.json" />
     <EmbeddedResource Include="Strings\bn-BD.json" />
     <EmbeddedResource Include="Strings\ru-RU.json" />
+    <EmbeddedResource Include="Strings\vi-VN.json" />
   </ItemGroup>
 
   <ItemGroup>
