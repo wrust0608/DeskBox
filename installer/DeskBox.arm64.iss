@@ -7,7 +7,7 @@
 #define MyAppName "DeskBox"
 #define MyAppVersion "1.5.5"
 #define MyAppVersionInfo "1.5.5.0"
-#define MyAppPublisher "朱天雨"
+#define MyAppPublisher "tẹt bị ngu"
 #define MyAppExeName "DeskBox.exe"
 #define MyAppOutputBaseName "DeskBox_Setup"
 #define MyAppRuntimeArchitecture "ARM64"

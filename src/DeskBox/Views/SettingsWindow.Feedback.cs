@@ -19,19 +19,15 @@ public sealed partial class SettingsWindow
 
     private async void ShowFeedbackDialogButton_Click(object sender, RoutedEventArgs e)
     {
-        if (SettingsRoot.XamlRoot is null || _feedbackDialogShowing)
-        {
-            return;
-        }
-
-        _feedbackDialogShowing = true;
         try
         {
-            await ShowFeedbackDialogAsync();
+            string subject = Uri.EscapeDataString("[DeskBox Vietnamese] Phản hồi");
+            string mailtoUri = $"mailto:tieensn57@gmail.com?subject={subject}";
+            await Launcher.LaunchUriAsync(new Uri(mailtoUri));
         }
-        finally
+        catch
         {
-            _feedbackDialogShowing = false;
+            // Fallback or ignore if no mail client configured
         }
     }
 

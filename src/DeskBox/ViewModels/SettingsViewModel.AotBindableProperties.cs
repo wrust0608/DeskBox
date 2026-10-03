@@ -1,4 +1,4 @@
-﻿#if DESKBOX_NATIVE_AOT
+#if DESKBOX_NATIVE_AOT
 namespace DeskBox.ViewModels;
 
 [WinRT.GeneratedBindableCustomProperty([
@@ -18,7 +18,6 @@ namespace DeskBox.ViewModels;
     nameof(DonationQrCodeVisibility),
     nameof(IsOneClickActionEnabled),
     nameof(ManualUpdateDownloadUrl),
-    nameof(MicrosoftStoreLink),
     nameof(OfficialWebsiteLink),
     nameof(OneClickActionButtonText),
     nameof(ReleaseNotesButtonVisibility),
