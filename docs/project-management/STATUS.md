@@ -1,7 +1,7 @@
 # Project Status
 
 **Project:** DeskBox Vietnamese
-**Current state:** `VI_PREVIEW_INSTALLED_READY_FOR_USE`
+**Current state:** `VI_PREVIEW_VALIDATED_READY_FOR_USE`
 **Execution model:** FAST TRACK (Approved per D-008)
 **Code modification authorized:** YES (vi-VN infrastructure, installer localization & OS 26200 runtime fix)
 **Translation authorized:** FULL TRANSLATION (2,677 keys translated, audited, and polished)
@@ -16,7 +16,7 @@
 - [x] **Translation Calibration:** COMPLETE (Real resource keys traceability fixed in `docs/vi-VN/TRANSLATION_CALIBRATION.md`)
 - [x] **Full 2,677-Key Translation:** COMPLETE (Domain-by-domain natural translation, 0 missing, 0 empty)
 - [x] **Localization Tests:** COMPLETE (81 / 81 PASS)
-- [x] **Full Regression Suite:** COMPLETE (4,631 / 4,634 PASS; exactly 0 new regressions matching baseline)
+- [x] **Full Regression Suite:** COMPLETE (4,632 / 4,634 PASS; exactly 0 new regressions matching baseline)
 - [x] **Debug Runtime Verification:** COMPLETE (Canonical Debug exe verified on Windows 11 x64, vi-VN loaded)
 - [x] **Targeted Language Polish:** COMPLETE (Snapshot terminology, feature widgets, media, clipboard, verify, mapping, cleartext warnings polished)
 - [x] **Scope Isolation:** COMPLETE (`App.Tray.cs` safeguarded against OS 26200 E_NOTIMPL)
@@ -26,6 +26,7 @@
 - [x] **Direct Inno Installer Build:** COMPLETE (`DeskBox_Setup_1.5.5_x64.exe` compiled cleanly)
 - [x] **Safe Local Installation:** COMPLETE (Installed via `/CURRENTUSER /LANG=vietnamese`, exit code 0)
 - [x] **Post-Install Verification:** COMPLETE (Installed exe executed, `InstallLanguage = vi-VN`, settings persisted, relaunch verified)
+- [x] **Final PM Validation:** COMPLETE (Artifact provenance verified, binary match verified, full regression verified with 0 new failures, smoke recheck passed)
 
 ## Active Deliverables
 - `installer/Languages/Vietnamese.isl`
@@ -40,4 +41,4 @@
 - `docs/project-management/STATUS.md`
 
 ## Next Action Required
-DeskBox Vietnamese local preview installed and ready for end-user operation.
+Project completed. DeskBox Vietnamese local preview fully validated and ready for production use.

@@ -3,7 +3,7 @@
 ## 1. Executive Summary
 
 - **Project:** DeskBox Vietnamese
-- **Status:** `VI_PREVIEW_INSTALLED_READY_FOR_USE`
+- **Status:** `VI_PREVIEW_VALIDATED_READY_FOR_USE`
 - **Execution Date:** 2026-10-03
 - **Platform:** Windows 11 x64 (OS Build 26200)
 - **Application Version:** 1.5.5 (FileVersion 1.5.5.0)
@@ -14,8 +14,9 @@
 ## 2. Git & Source Integrity
 
 - **Starting Source HEAD:** `c902a389136933617bdae85641504c7670e1d2d5`
-- **Installer Source Commit:** `0b2e854edd12fddbc62a64722f469e1df70a0846` (`feat(installer): add professional Vietnamese localization`)
-- **Fix & Runtime Commit:** `c6dbed3a8c3d0dfa0bc0928e08d66df21b0235ad` (`fix(tray): safeguard ContextFlyout assignment against OS 26200 E_NOTIMPL`)
+- **Installer Localization Commit:** `0b2e854edd12fddbc62a64722f469e1df70a0846` (`feat(installer): add professional Vietnamese localization`)
+- **Final Artifact Source Commit:** `c6dbed3ab70b236edd74a72d539fe94e84e12020` (`fix(tray): prevent startup crash on Windows 11 build 26200 from E_NOTIMPL in ContextFlyout`)
+- **Initial Report Commit:** `031f8bd40dfcc5b40514655175acd77893af97a2` (`docs(vi-VN): record Vietnamese installer preview and smoke test results`)
 - **Remote Branch:** `feat/vi-vn-localization` (pushed to `origin/feat/vi-vn-localization`)
 
 ---
@@ -49,10 +50,14 @@
   - Total: 81
   - Passed: 81
   - Failed: 0
+- **Tray Targeted Tests (`Tray*`):**
+  - Total: 90
+  - Passed: 90
+  - Failed: 0
 - **Full Regression Test Suite:**
   - Total: 4,634
-  - Passed: 4,631
-  - Failed: 3 (KB-001, KB-002, KB-003 — known baseline exceptions accepted per D-008)
+  - Passed: 4,632
+  - Failed: 2 (KB-002, KB-003 — known baseline exceptions accepted per D-008)
   - Skipped: 0
   - New Regressions: 0
 
@@ -64,8 +69,13 @@
 - **Publish Status:** SUCCESS (Exit code 0)
 - **Platform / Architecture:** x64 / `win-x64`
 - **Native AOT:** Enabled (`PublishAot=true`)
+- **Summary Provenance:**
+  - `gitCommit`: `c6dbed3ab70b236edd74a72d539fe94e84e12020`
+  - `gitDirty`: `false`
+  - `workingTreeFingerprint`: `01BA4719C80B6FE911B091A7C05124B64EEECE964E09C058EF8F9805DACA546B`
+  - `sourceStableDuringPublish`: `true`
 - **Key Artifacts Verified:**
-  - `DeskBox.exe` (PE x64)
+  - `DeskBox.exe` (PE x64, SHA-256: `DBCA6AC48B996E0D6128D73D32C482FB04E9833678F7192173479D6517115069`)
   - `DeskBox.Updater.exe` (PE x64)
   - `DeskBox.ThumbnailProxy.exe` (PE x64)
   - `deskbox_native.dll` (PE x64)
@@ -119,7 +129,7 @@
 ## 9. Post-Install Verification & Smoke Test
 
 - **Actual Installed Executable:** `C:\Users\nvhoa\AppData\Local\Programs\DeskBox\DeskBox.exe`
-- **Process ID & Path:** PID 7764 (initial), PID 28684 (relaunch), verified running from `C:\Users\nvhoa\AppData\Local\Programs\DeskBox\DeskBox.exe`
+- **Process ID & Path:** PID 7764 (initial), PID 28684 (relaunch), PID 26888 (final smoke recheck), verified running from `C:\Users\nvhoa\AppData\Local\Programs\DeskBox\DeskBox.exe`
 - **Registry Key Verification:**
   - `HKCU\Software\DeskBox\DirectInstall\InstallLocation` = `C:\Users\nvhoa\AppData\Local\Programs\DeskBox`
   - `HKCU\Software\DeskBox\DirectInstall\InstallVersion` = `1.5.5`
@@ -152,4 +162,53 @@
 
 ## 11. Unresolved Issues
 
-- **None:** 0 blocking issues. Known baseline exceptions KB-001, KB-002, KB-003 remain isolated to upstream test expectations as approved in D-008.
+- **None:** 0 blocking issues. Known baseline exceptions KB-002 and KB-003 remain isolated to upstream test expectations as approved in D-008.
+
+---
+
+## 12. Final PM Validation
+
+```text
+FINAL SOURCE COMMIT:
+c6dbed3ab70b236edd74a72d539fe94e84e12020
+
+AOT SUMMARY GIT COMMIT:
+c6dbed3ab70b236edd74a72d539fe94e84e12020
+
+AOT WORKING TREE DIRTY:
+false
+
+PUBLISHED EXE SHA256:
+DBCA6AC48B996E0D6128D73D32C482FB04E9833678F7192173479D6517115069
+
+INSTALLED EXE SHA256:
+DBCA6AC48B996E0D6128D73D32C482FB04E9833678F7192173479D6517115069
+
+BINARY MATCH:
+True
+
+TRAY TARGETED TESTS:
+Total: 90 | Passed: 90 | Failed: 0
+
+LOCALIZATION TESTS:
+Total: 81 | Passed: 81 | Failed: 0
+
+INSTALLER TESTS:
+Total: 22 | Passed: 22 | Failed: 0
+
+FINAL FULL REGRESSION:
+TOTAL: 4634
+PASSED: 4632
+FAILED: 2
+KNOWN FAILURES: 2 (KB-002, KB-003)
+NEW FAILURES: 0
+
+INSTALLED RELAUNCH:
+PID: 26888
+PROCESS PATH: C:\Users\nvhoa\AppData\Local\Programs\DeskBox\DeskBox.exe
+TRAY STARTUP: PASS (Safe fallback active, OnLaunched completed successfully)
+VI-VN PERSISTENCE: PASS ("language": "vi-VN" preserved across relaunch)
+
+PM RELEASE GATE:
+PASS
+```
