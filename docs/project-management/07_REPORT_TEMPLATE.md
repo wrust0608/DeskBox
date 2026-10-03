@@ -1,0 +1,63 @@
+# 07 — Agent Handoff Report Template
+
+## Identity
+PHASE:
+STATUS: PASS / BLOCKED / FAIL
+DATE:
+REPO PATH:
+BRANCH:
+BASE SHA:
+CURRENT SHA:
+TARGET ARCH:
+
+## Work performed
+-
+
+## Files changed
+NEW:
+MODIFIED:
+DELETED:
+
+## Localization metrics
+CANONICAL LOCALE:
+VI-VN KEY COUNT:
+CANONICAL KEY COUNT:
+KEY COVERAGE:
+PLACEHOLDER PARITY:
+UNTRANSLATED USER-FACING STRINGS:
+
+## Build/test evidence
+COMMANDS:
+TOTAL:
+PASSED:
+FAILED:
+SKIPPED:
+LOG PATHS:
+
+## Runtime evidence
+EXECUTABLE PATH:
+LANGUAGE PERSISTENCE:
+LIGHT MODE:
+DARK MODE:
+SCALING CHECKS:
+SCREENSHOT PATHS:
+
+## Installation evidence (only when authorized)
+INSTALLER/PACKAGE:
+SHA-256:
+INSTALLED VERSION:
+INSTALLED PATH/IDENTITY:
+BACKUP MANIFEST:
+ROLLBACK STATUS:
+
+## Issues
+BLOCKERS:
+MAJOR:
+MINOR:
+COSMETIC:
+
+## Reviewer decisions required
+-
+
+## Recommended next authorized phase
+-
