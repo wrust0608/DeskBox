@@ -3623,7 +3623,7 @@ svc:Localized.DescriptionKey="Settings.DefaultWidth.Description"
             Grid.RowSpan="2"
             DefaultButton="Close">
             <ScrollViewer
-                MaxHeight="560"
+                MaxHeight="620"
                 HorizontalScrollBarVisibility="Disabled"
                 HorizontalScrollMode="Disabled"
                 VerticalScrollBarVisibility="Auto"
@@ -3632,14 +3632,14 @@ svc:Localized.DescriptionKey="Settings.DefaultWidth.Description"
                     x:Name="SupportDialogContent"
                     Width="480"
                     MaxWidth="480"
-                    Spacing="14">
-                        <StackPanel Spacing="8">
+                    Spacing="12">
+                        <StackPanel Spacing="6">
                             <TextBlock
-                                LineHeight="22"
+                                LineHeight="20"
                                 TextWrapping="WrapWholeWords"
                                 svc:Localized.Key="Settings.Dialog.SupportP1" />
                             <TextBlock
-                                LineHeight="22"
+                                LineHeight="20"
                                 TextWrapping="WrapWholeWords"
                                 svc:Localized.Key="Settings.Dialog.SupportP2" />
                         </StackPanel>
@@ -3647,21 +3647,23 @@ svc:Localized.DescriptionKey="Settings.DefaultWidth.Description"
                         <Border
                             Visibility="{Binding DonationQrCodeVisibility}"
                             HorizontalAlignment="Center"
-                            Padding="14"
+                            Padding="12"
                             Background="{ThemeResource CardBackgroundFillColorDefaultBrush}"
                             BorderBrush="{ThemeResource CardStrokeColorDefaultBrush}"
                             BorderThickness="1"
                             CornerRadius="8">
                             <StackPanel HorizontalAlignment="Center" Spacing="10">
                                 <Border
-                                    Width="180"
-                                    Height="180"
-                                    Padding="8"
+                                    Width="280"
+                                    Height="540"
+                                    Padding="10"
                                     Background="White"
-                                    CornerRadius="6">
+                                    CornerRadius="8">
                                     <Image
                                         Source="ms-appx:///Assets/Support/custom-support-qr.png"
-                                        Stretch="Uniform" />
+                                        Stretch="Uniform"
+                                        HorizontalAlignment="Center"
+                                        VerticalAlignment="Center" />
                                 </Border>
                                 <TextBlock
                                     HorizontalAlignment="Center"
